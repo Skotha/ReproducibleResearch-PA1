@@ -1,8 +1,8 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
+author: "Saikrishna Kotha"
+date: "Jan 18th 2015"
+output: html_document
 ---
 
 
