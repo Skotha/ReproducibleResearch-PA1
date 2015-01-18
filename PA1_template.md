@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 
 ### Loading and preprocessing the data
@@ -50,7 +55,7 @@ TotalStepsAday <- aggregate(steps~date, data = activity, sum, na.rm=TRUE)
 hist(TotalStepsAday$steps, main = "Total Steps in a Day",xlab="day", col="blue")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 ```r
 ## Calculate the mean and median of the steps taken
@@ -84,7 +89,7 @@ plot(row.names(timeseries), timeseries, type = "l", xlab = "5-min interval",
     col = "blue")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
 ```r
 ## Find out the 5min internal which has max number steps taken.
@@ -150,7 +155,7 @@ TotalSteps <- aggregate(steps ~ date, data = newActivity, sum, na.rm = TRUE)
 hist(TotalSteps$steps, main = "Total steps in a day", xlab = "day", col = "blue")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
 
 
 ```r
@@ -211,5 +216,5 @@ xyplot(steps ~ interval | daylevel, stepsByDay, type = "l", layout = c(1, 2),
     xlab = "5min Interval", ylab = "Total Number of Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-10-1.png) 
+![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png) 
 
